@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha384-XX" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha384-XX"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <a class="main-logo" href="https://progradudi.netlify.app">
+        </a>
+        <nav id="nav" class="main-nav">
+            <div class="nav-links">
+                <a class="link-item" href="#hola">HOLA</a>
+                <a class="link-item" href="#conocimiento">CONOCIMIENTOS</a>
+                <a class="link-item" href="#proyecto">PROYECTOS</a>
+                <a class="link-item color animacion1" href="#contactame">CONTACTAME</a>
+            </div>
+        </nav>
+        <button id="button-menu" class="button-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <div class="principal" id="hola">
+        <div class="hola">
+            <p>¡Hola! soy</p>
+            <h1>Mateo Restrepo Morales</h1>
+            <p>Desarrollador</p>
+            <button class="color animacion2"> <a href="#proyecto">LO QUE HAGO</a></button>
+        </div>
+        <div class="imagen1 animacion3">
+            <img src="img/programación.jpg" alt="Programador">
+        </div>
+    </div>
+
+    <div class="conocimientos" id="conocimiento">
+        <div class="conodiv">
+            <h2>Mis conocimientos</h2>
+            <p>Mi formacion es un poco autodidacta y mediante cudiosidad al observar detalles logro cosas con codigo.
+            </p>
+            <div class="cono">
+                <div>
+                    <img class="codigo" src="img/html-5.png" alt="html5">
+                    <p> HTML5</p>
+                </div>
+                <div>
+                    <img class="codigo" src="img/css.png" alt="css">
+                    <p> CSS3 </p>
+                </div>
+                <div>
+                    <img class="codigo" src="img/java-script.png" alt="java-script">
+                    <p> JavaCript </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="proyectos" id="proyecto">
+        <h2>Mis proyectos</h2>
+        <p>Estos han sido mis proyectos actualmente. </p>
+        <div class="proyectosItems">
+            <div class="codigo1">
+                <a href="https://github.com/TeoRM" target="_blank"><img class="avocados" src="img/miGithub.PNG" alt="GitHub"></a>
+            </div>
+            <div class="codigo1">
+                <a href="https://teorm.github.io/Avocados/" target="_blank"><img class="avocados" src="img/avocados.PNG"
+                        alt="Logo Avocados"></a>
+            </div>
+            <div class="codigo1">
+                <a href="https://teorm.github.io/Landing-Page/" target="_blank"><img class="avocados" src="img/Landing.PNG"
+                        alt="LandinPage"></a>
+            </div>
+            <div class="codigo1">
+                <a href="https://teorm.github.io/Login/" target="_blank"><img class="avocados" src="img/Login.PNG" alt="Login"></a>
+            </div>
+            <div class="codigo1">
+                <a href="https://teorm.github.io/Grasshopper-actividad/" target="_blank"><img class="avocados"
+                        src="img/GrassHopper.PNG" alt="GrassHopper"></a>
+
+            </div>
+        </div>
+
+        <div class="contactame" id="contactame">
+            <div class="formulario2">
+                <h2>Escribeme</h2>
+                <p>Me gustaria saber tu opinion</p>
+                <div class="formulario">
+                    <form class="formulario">
+                        <div class="nya">
+                            <div class="campoNombre">
+                                <label class="nombreFormulario" for="nombre">Nombre*</label>
+                                <input class="inputinfo" type="text" placeholder="p. ej. Mateo">
+                            </div>
+                            <div class="campoNombre">
+                                <label class="nombreFormulario" for="apellido">Apellido*</label>
+                                <input class="inputinfo" type="text" placeholder="p. ej. Restrepo">
+                            </div>
+                        </div>
+                        <div class="campoNombre campoEmail">
+                            <label for="email">Email*</label>
+                            <input type="text" placeholder="p. ej. mateorpom3@gmail.com">
+                        </div>
+                        <div class="campoNombre campoEmail">
+                            <label for="nombre">Mensaje</label>
+                            <textarea name="" id="" cols="30" rows="10"
+                                placeholder="Escriba su mensaje aqui"></textarea>
+                        </div>
+                        <button class="color2">ENVIAR</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <ul>
+                <li> <a href="#hola"> HOLA </a></li>
+                <li> <a href="#conocimiento"> CONOCIMIENTO </a></li>
+                <li> <a href="#proyecto"> PROYECTO </a></li>
+                <li> <a href="#contactame">CONTACTAME </a></li>
+            </ul>
+            <div>
+                <a target="_blank" href="https://github.com/TeoRM"> <img src="iconos/github.png" alt=""></a>
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=3015696104"> <img src="iconos/whatsapp.png"
+                        alt=""></a>
+                <a target="_blank" href="mateorpom3@gmail.com"> <img src="iconos/sobre-de-correo-electronico.png"
+                        alt=""></a>
+                <a target="_blank" href="https://www.linkedin.com/in/mateo-restrepo-morales-469841253/"><img
+                        src="iconos/linkedin.png" alt=""></a>
+            </div>
+        </footer>
+        <script src="index.js"></script>
+</body>
+
+</html>

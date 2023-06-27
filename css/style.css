@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-header {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0 0.4rem;
+}
+
+.main-logo {
+    color: black;
+    font-size: 32px;
+    text-decoration: none;
+}
+
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    margin-left: -100%;
+    transition: all 0.2s linear;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+}
+
+.main-nav.show {
+    margin-left: 0;
+}
+
+.nav-links {
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.link-item {
+    margin-top: 2rem;
+    color: rgb(34, 108, 174);
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+.link-item::after {
+    position: absolute;
+    content: "";
+    background-color: rgb(34, 108, 174);
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    transition: 0.3s ease all;
+}
+
+.link-item:hover::after {
+    width: 100%;
+}
+
+.button-menu {
+    z-index: 200;
+    width: 40px;
+    height: 40px;
+    border: none;
+    display: flex;
+    background: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.button-menu span {
+    width: 37px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: rgb(34, 108, 174);
+    border-radius: 3px;
+    transform-origin: 4px 0px;
+    transition: all 0.2s linear;
+}
+
+.button-menu.close span {
+    opacity: 1;
+    transform: rotate(45deg) translate(0px, 0px);
+    background: #ffffff;
+}
+
+.button-menu.close span:nth-child(2) {
+    transform: rotate(-45deg) translate(-8px, 5px);
+}
+
+.button-menu.close span:nth-child(3) {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .button-menu {
+        display: none;
+    }
+
+    .main-logo {
+        flex-basis: 30%;
+    }
+
+    .main-nav {
+        position: static;
+        margin-left: 0;
+        flex-basis: 70%;
+        height: 100%;
+    }
+
+    .nav-links {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-end;
+        background: white;
+    }
+
+    .link-item {
+        display: inline-block;
+        margin-top: 0;
+        margin-right: 2rem;
+    }
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    border-bottom: solid 2px rgb(34, 108, 174);
+    padding-bottom: 20px;
+    background: rgb(255, 255, 255, 0.9);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    margin-top: -50px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgb(34, 108, 174);
+}
+
+h1 {
+    font-size: 100px;
+}
+
+button {
+    margin: 10px;
+    padding: 5px;
+    border: 0;
+}
+
+.color {
+    background-color: rgb(34, 108, 174);
+    border-radius: 10px;
+    width: 120px;
+    text-align: center;
+    color: white;
+}
+
+.animacion1 {
+    animation-name: botonContactenos;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes botonContactenos {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+.animacion2:hover {
+    animation-name: LoQueHago;
+    animation-duration: 2s;
+}
+
+@keyframes LoQueHago {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+
+.animacion3 {
+    animation-name: imagen;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes imagen {
+    0% {
+        transform: rotateZ(0);
+    }
+
+    25% {
+        transform: rotateZ(5deg);
+    }
+
+    50% {
+        transform: rotateZ(-5deg);
+    }
+
+    75% {
+        transform: rotateZ(0);
+    }
+
+}
+
+.color a {
+    color: white;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    margin-right: 40px;
+
+}
+
+li {
+    margin-left: 40px;
+}
+
+.principal {
+    display: flex;
+    margin: 50px;
+    padding-top: 100px;
+}
+
+
+
+.imagen1 img {
+    width: 800px;
+    box-shadow: 0 0 30px rgb(34, 108, 174);
+}
+
+.conocimientos {
+    padding-top: 100px;
+    height: 580px;
+    margin-top: 150px;
+    background-color: rgb(34, 108, 174);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+.cono {
+    display: flex;
+    justify-content: center
+}
+
+.codigo {
+    width: 200px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    margin-top: 70px;
+    box-shadow: 0 0 20px white;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.conodiv {
+    margin-top: 50px;
+}
+
+.proyectos {
+    padding-top: 100px;
+    height: 70vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/*TODO: PROYECTOS */
+
+.proyectosItems {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin-bottom: 50px;
+}
+
+.codigo1 {
+    width: 200px;
+    background-color: rgb(34, 108, 174);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    margin-top: 70px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.avocados {
+    width: 200px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+/*? CONTACTAME */
+
+.contactame {
+    color: white;
+    padding-top: 50px;
+    height: 580px;
+    background-color: rgb(34, 108, 174);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario2 {
+    border: solid 2px white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px white;
+    margin-button: 20px;
+}
+
+.nya,
+.email {
+    display: flex;
+
+}
+
+.color2 {
+    background-color: white;
+    border-radius: 10px;
+    width: 120px;
+    text-align: center;
+    color: rgb(34, 108, 174);
+    display: block;
+}
+
+.campoNombre {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.inputinfo {
+    width: 300px;
+    text-align: center;
+}
+
+.campoEmail {
+    width: 628px;
+}
+
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+footer {
+    background-color: rgb(255, 255, 255);
+    color: white;
+    text-align: center;
+}
+
+footer img {
+    width: 30px;
+    margin: 10px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+footer ul {
+    margin-bottom: 10px;
+
+}
+
+footer ul li a {
+    color: rgb(34, 108, 174);
+}
+
+@media (max-width:1350px) {
+    .imagen1 img {
+        width: 600px;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:1150px) {
+    .principal {
+        flex-direction: column;
+        align-items: center;
+    }
+    .proyectos {
+        height: 90vh;
+    }
+}
+
+@media (max-width:840px) {
+    .cono {
+        flex-wrap: wrap;
+    }
+
+    .conocimientos {
+        height: 100vh;
+    }
+    .proyectos {
+        height: 120vh;
+    }
+}
+
+@media (max-width:690px) {
+    .nya {
+        flex-direction: column;
+    }
+
+    .formulario {
+        width: 400px;
+    }
+
+    .campoNombre {
+        width: 400px;
+
+    }
+
+    .contactame {
+        height: 70vh;
+    }
+
+    .inputinfo {
+        width: 400px;
+    }
+}
+
+@media (max-width:610px) {
+    .cono {
+        flex-direction: column;
+    }
+
+    .conocimientos {
+        height: 140vh;
+    }
+
+    .imagen1 img {
+        width: 400px;
+        margin-top: 50px;
+        margin-bottom: -100px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+    .proyectos {
+        height: 120vh;
+    }
+
+}
+
+@media (max-width:560px) {
+
+    .proyectos {
+        height: 220vh;
+    }
+}
