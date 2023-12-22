@@ -463,7 +463,7 @@ footer ul li a {
     }
 
     .conocimientos {
-        height: 100vh;
+        height: 100%;
     }
     .proyectos {
         height: 120vh;
@@ -499,7 +499,7 @@ footer ul li a {
     }
 
     .conocimientos {
-        height: 140vh;
+        height: 100%;
     }
 
     .imagen1 img {
