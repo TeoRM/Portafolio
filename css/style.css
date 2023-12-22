@@ -280,7 +280,8 @@ li {
 
 .conocimientos {
     padding-top: 100px;
-    height: 580px;
+    padding-bottom:20px ;
+    height: 100X;
     margin-top: 150px;
     background-color: rgb(34, 108, 174);
     display: flex;
