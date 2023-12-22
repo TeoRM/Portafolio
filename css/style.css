@@ -291,7 +291,8 @@ li {
 
 .cono {
     display: flex;
-    justify-content: center
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .codigo {
