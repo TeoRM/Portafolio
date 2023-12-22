@@ -280,7 +280,7 @@ li {
 
 .conocimientos {
     padding-top: 100px;
-    padding-bottom:20px ;
+    padding-bottom:30px ;
     height: 100%;
     margin-top: 150px;
     background-color: rgb(34, 108, 174);
@@ -314,6 +314,7 @@ h2 {
 .conodiv {
     margin-top: 50px;
     flex-wrap: wrap;
+    
 }
 
 .proyectos {
@@ -359,7 +360,7 @@ h2 {
     color: white;
     padding-top: 50px;
     padding-bottom: 50px;
-    height: 580px;
+    height: 100%;
     background-color: rgb(34, 108, 174);
     display: flex;
     flex-direction: column;
@@ -454,7 +455,7 @@ footer ul li a {
         align-items: center;
     }
     .proyectos {
-        height: 90vh;
+        height: 100%;
     }
 }
 
@@ -467,7 +468,7 @@ footer ul li a {
         height: 100%;
     }
     .proyectos {
-        height: 120vh;
+        height: 100%;
     }
 }
 
@@ -486,7 +487,7 @@ footer ul li a {
     }
 
     .contactame {
-        height: 70vh;
+        height: 100%;
     }
 
     .inputinfo {
@@ -513,7 +514,7 @@ footer ul li a {
         font-size: 50px;
     }
     .proyectos {
-        height: 120vh;
+        height: 100%;
     }
 
 }
@@ -521,6 +522,6 @@ footer ul li a {
 @media (max-width:560px) {
 
     .proyectos {
-        height: 220vh;
+        height: 100%;
     }
 }
